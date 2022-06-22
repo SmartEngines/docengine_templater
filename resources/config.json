@@ -1,0 +1,35 @@
+{
+  "executable": "docengine_cli",
+  "bundle": "bundle_docengine_photo.se",
+  "sessions": {
+    "rus_payment_order": {
+      "documents_mask": "rus.payment_order*",
+      "text": "payment order"
+    },
+    "arm_social_card": {
+      "documents_mask": "arm.ref_public*",
+      "text": "social card"
+    },
+    "rus_2ndfl": {
+      "documents_mask": "rus.2ndfl*",
+      "text": "income form"
+    }
+  },
+  "tags": {
+    "rus_payment_order:payer": "payer_name",
+    "rus_payment_order:payer_bank": "payer_bank_name",
+    "rus_payment_order:beneficiary": "beneficiary_name",
+    "rus_payment_order:beneficiary_account": "beneficiary_account",
+    "rus_payment_order:beneficiary_bank": "beneficiary_bank_name",
+    "rus_payment_order:bik_beneficiary": "beneficiary_bik",
+    "rus_payment_order:kpp_beneficiary": "beneficiary_kpp",
+    "rus_payment_order:amount_words": "payment_amount",
+    "rus_payment_order:purpose_payment": "payment_purpose",
+    "rus_2ndfl:surname": "surname",
+    "rus_2ndfl:name": "name",
+    "rus_2ndfl:patronymic": "patronymic",
+    "rus_2ndfl:birth_date": "birth_date",
+    "arm_social_card:name_patronymic_surname": "arm_fio",
+    "arm_social_card:public_service_number": "arm_number"
+  }
+}
